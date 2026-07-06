@@ -1,0 +1,40 @@
+##############################################################################
+#                                                                            #
+#  bashsieve.list                                                            #
+#                                                                            #
+#  List of specific commands or terms that will be removed from the Bash     #
+#  history when executing the script.                                        #
+#                                                                            #
+#  Lines starting with a hash character ('#') will be ignored. Multiple      #
+#  terms per line will be treated as separate ones. All terms below are      #
+#  processed case-insensive.                                                 #
+#                                                                            #
+#  However, it is recommended to write the terms in different lines each     #
+#  instead of using multiple terms per line separated with spaces.           #
+#                                                                            #
+#  Not just the matching terms within a history entry will be removed, but   #
+#  the entire line containing it. For example, when adding the term 'pass'   #
+#  to this file, BashSieve will remove history entries                       #
+#                                                                            #
+#      passwd johndoe                                                        #
+#                                                                            #
+#  as well as:                                                               #
+#                                                                            #
+#      mount -t cifs //192.168.1.24/foobar /mnt \                            #
+#            -o user=johndoe,pass=S3cr37P455wD                               #
+#                                                                            #
+##############################################################################
+
+auth
+dsa
+halt
+history
+key
+mount
+pass
+poweroff
+reboot
+rsa
+shutdown
+sieve
+ssh
