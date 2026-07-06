@@ -23,7 +23,7 @@ mount -t cifs //192.168.1.24/foobar /mnt \
       -o user=johndoe,pass=S3cr37P455wD
 ```
 
-the username, password, and IP address will be kept inside the history unless you manuallymanually run the
+the username, password, and IP address will be kept inside the history unless you manually run the
 
 ```
 history -c
