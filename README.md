@@ -23,13 +23,13 @@ mount -t cifs //192.168.1.24/foobar /mnt \
       -o user=johndoe,pass=S3cr37P455wD
 ```
 
-the username, password, and IP address will be kept inside the history unless you manually:
+the username, password, and IP address will be kept inside the history unless you manuallymanually run the
 
 ```
 history -c
 ```
 
-Otherwise the command remains in it. However, clearing the history that way will delete all commands executed before.
+command. Otherwise, the mount information remains in it. However, this command will clear the history by deleting all of its entries.
 
 The *BashSieve* script simply removes specific user-defined *Bash* history entries on logout and prevents critical information (such as commands, passwords, IP addresses, etc.) from remaining in it.
 
