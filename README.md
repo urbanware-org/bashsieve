@@ -18,14 +18,14 @@ Script to remove specific *Bash* history entries upon logout, to prevent critica
 
 If not disabled or manually cleared, the *Bash* keeps all the executed commands by writing them into its history file, including lines with passwords in it. For example, when executing
 
-```
+```bash
 mount -t cifs //192.168.1.24/foobar /mnt \
       -o user=johndoe,pass=S3cr37P455wD
 ```
 
 the username, password, and IP address will be kept inside the history unless you manually run the
 
-```
+```bash
 history -c
 ```
 
@@ -41,7 +41,7 @@ So far, this tool is still very rudimentary.
 
 First of all, add the following line at the end the `.bashrc` file inside of your home directory. For example, in case the *BashSieve* script is located in `/opt/bashsieve`:
 
-```
+```bash
 trap '/opt/bashsieve/bashsieve.sh' exit
 ```
 
@@ -53,13 +53,13 @@ After logging out and logging in again *BashSieve* will be triggered on every fu
 
 Alternatively *BashSieve* can instantly be enabled by manually reloading your local `.bashrc` file using
 
-```
+```bash
 . ~/.bashrc
 ```
 
 or via the long form:
 
-```
+```bash
 source ~/.bashrc
 ```
 
