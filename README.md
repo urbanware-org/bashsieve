@@ -19,8 +19,7 @@ Script to remove specific *Bash* history entries upon logout, to prevent critica
 If not disabled or manually cleared, the *Bash* keeps all the executed commands by writing them into its history file, including lines with passwords in it. For example, when executing
 
 ```bash
-mount -t cifs //192.168.1.24/foobar /mnt \
-      -o user=johndoe,pass=S3cr37P455wD
+mount -t cifs //192.168.1.24/foobar /mnt -o user=johndoe,pass=S3cr37P455wD
 ```
 
 the username, password, and IP address will be kept inside the history unless you manually run the
