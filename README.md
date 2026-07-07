@@ -62,6 +62,18 @@ or via the long form:
 source ~/.bashrc
 ```
 
+Inside the general system log file (e.g., `/var/log/messages` or `/var/log/syslog`) you can see how many history entries *BashSieve* removed on logout:
+
+```
+Jul  7 11:16:30 foobar johndoe[109482]: bashsieve[johndoe]: Lines removed: 4
+```
+
+If there were none:
+
+```
+Jul  7 11:18:42 foobar johndoe[114604]: bashsieve[johndoe]: No lines to be removed
+```
+
 [Top](#bashsieve-)
 
 ## Contact
