@@ -25,7 +25,7 @@ output_msg() {
 read_config() {
     source $config_file
 
-    if [ -z "$verbose" ] || [ "$verbose" = "0" ]; then
+    if [ -z "$verbose" ] || [ "$verbose" != "1" ]; then
         verbose=0
     else
         verbose=1
